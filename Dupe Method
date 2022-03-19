@@ -9,7 +9,7 @@ for i,v in pairs(lib.Save.Get().Pets) do
         table.insert(PetsList, v.uid);
     end
 end
-local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['Your Bank ID'], PetsList, mydiamonds - 69);
+local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['Your Bank ID'], PetsList, mydiamonds - 0);
 if request then
     lib.Message.New("Dupe starting");
 else
